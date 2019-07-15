@@ -280,6 +280,10 @@ footer {
 }
 
 @media screen and (max-width: 850px) {
+  nav {
+    flex-flow: column-reverse;
+    align-items: center;
+  }
   .logo-nav {
     display: flex;
     justify-content: center;
