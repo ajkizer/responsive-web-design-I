@@ -1,0 +1,332 @@
+/* Use your own code or past solution for Great Idea Web Page CSS here! */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* Set every element's box-sizing to border-box */
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  font-family: "Titillium Web", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: "Bangers", cursive;
+  letter-spacing: 1px;
+  margin-bottom: 15px;
+}
+
+/* Your code starts here! */
+
+hr {
+  margin: 5%;
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+  flex-flow: row wrap-reverse;
+  align-items: center;
+  padding: 5%;
+}
+
+.navlinks {
+  display: flex;
+  justify-content: space-between;
+  width: 75%;
+}
+
+.navlinks a {
+  text-decoration: none;
+  color: grey;
+}
+
+h2 {
+  font-size: 2rem;
+}
+.services-header-img {
+  width: 90%;
+  margin-bottom: 5%;
+}
+
+.services-offered {
+  margin: 0 5%;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+}
+
+.service-box {
+  width: 45%;
+  border: 1px solid black;
+  border-radius: 10px;
+  margin: 2% 0;
+  background: rgba(211, 211, 211, 0.877);
+}
+
+.box-content {
+  padding: 4%;
+}
+
+.learn-more {
+  width: 130px;
+  height: 30px;
+  font-size: 0.8rem;
+  border-radius: 5px;
+  margin-top: 3%;
+  padding: 2% 5%;
+}
+
+.list {
+  display: flex;
+  flex-flow: column wrap;
+}
+ul {
+  list-style-type: square;
+  margin: 4%;
+}
+
+li {
+  line-height: 1.5;
+}
+
+.services-section {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: space-between;
+  margin: 0 5%;
+}
+
+.services-img img {
+  width: 100%;
+  margin: 0 auto 5%;
+}
+
+.services-text {
+  margin-top: 5%;
+}
+
+.facts {
+  display: flex;
+  flex-flow: row wrap;
+  padding: 0 5%;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.facts-content {
+  width: 50%;
+}
+
+.facts-image {
+  width: 49%;
+  margin-left: 1%;
+}
+
+footer {
+  text-align: center;
+  padding: 5%;
+}
+@media screen and (max-width: 850px) {
+  nav {
+    flex-flow: column-reverse;
+    align-items: center;
+  }
+  .logo-nav {
+    display: flex;
+    justify-content: center;
+    margin: 3% auto;
+  }
+
+  .navlinks {
+    width: 100%;
+    margin: 3% auto;
+  }
+
+  .box-content {
+    text-align: center;
+  }
+
+  .learn-more {
+  }
+
+  .facts-image {
+    display: none;
+  }
+
+  .facts-content {
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .navlinks {
+    flex-flow: column;
+    align-items: center;
+    width: 100%;
+  }
+
+  .navlinks a {
+    border-top: 1px solid black;
+    padding: 4% 0;
+    width: 100%;
+    text-align: center;
+    font-size: 2rem;
+  }
+  .services-offered {
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .service-box {
+    width: 100%;
+  }
+
+  .services-img {
+    display: none;
+  }
+
+  .services-text {
+    text-align: center;
+  }
+
+  .facts {
+    margin: auto;
+    padding: 5%;
+  }
+}
