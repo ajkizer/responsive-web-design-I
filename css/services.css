@@ -152,10 +152,17 @@ h5 {
 }
 
 /* Your code starts here! */
+body,
+.service-box button {
+  background: Snow;
+  color: #060708;
+}
 
 hr {
   margin: 5%;
+  border-top: 1px solid #060708;
 }
+
 nav {
   display: flex;
   justify-content: space-between;
@@ -173,14 +180,20 @@ nav {
 .navlinks a {
   text-decoration: none;
   color: grey;
+  transition: ease-in-out;
+  transition-duration: 0.1s;
+}
+
+.navlinks a:hover {
+  transform: scale(1.1, 1.1);
+}
+
+.services-text {
+  padding-top: 5%;
 }
 
 h2 {
   font-size: 2rem;
-}
-.services-header-img {
-  width: 90%;
-  margin-bottom: 5%;
 }
 
 .services-offered {
@@ -195,26 +208,38 @@ h2 {
   border: 1px solid black;
   border-radius: 10px;
   margin: 2% 0;
-  background: rgba(211, 211, 211, 0.877);
 }
 
-.box-content {
-  padding: 4%;
+.service-box div {
+  padding: 15% 10%;
+  text-align: center;
 }
 
-.learn-more {
+button {
+  font-weight: bold;
+  letter-spacing: 0.07rem;
+  margin: 10% auto 0;
   width: 130px;
   height: 30px;
+  border: 1px solid black;
   font-size: 0.8rem;
-  border-radius: 5px;
-  margin-top: 3%;
   padding: 2% 5%;
 }
 
-.list {
-  display: flex;
-  flex-flow: column wrap;
+.service-box div {
+  transition: ease-out;
+  transition-duration: 0.3s;
 }
+
+.service-box div:hover {
+  transform: scale(1.07, 1.07);
+}
+
+button:hover {
+  background: black;
+  color: snow;
+}
+
 ul {
   list-style-type: square;
   margin: 4%;
@@ -250,6 +275,7 @@ li {
 
 .facts-content {
   width: 50%;
+  padding-right: 5%;
 }
 
 .facts-image {
@@ -263,13 +289,12 @@ footer {
 }
 @media screen and (max-width: 850px) {
   nav {
-    flex-flow: column-reverse;
+    flex-flow: column-reverse wrap;
     align-items: center;
   }
   .logo-nav {
     display: flex;
     justify-content: center;
-    margin: 3% auto;
   }
 
   .navlinks {

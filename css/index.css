@@ -152,6 +152,11 @@ h5 {
 }
 
 /* Your code starts here! */
+
+body {
+  background: snow;
+  color: #060708;
+}
 nav {
   display: flex;
   justify-content: space-between;
@@ -169,6 +174,12 @@ nav {
 .navlinks a {
   text-decoration: none;
   color: grey;
+  transition: ease-in-out;
+  transition-duration: 0.1s;
+}
+
+.navlinks a:hover {
+  transform: scale(1.1, 1.1);
 }
 
 .header-content {
@@ -203,15 +214,15 @@ h1 {
 .header-text button {
   width: 150px;
   height: 40px;
-  border-radius: 15px;
-  background: white;
+  background: snow;
   border: 1px solid black;
   font-weight: bold;
+  transition: ease-in-out;
+  transition-duration: 0.2s;
 }
 
 .header-text button:hover {
-  transform: scale(1.1, 1.1);
-  background-color: grey;
+  transform: scale(1.03, 1.03);
 }
 
 hr {
@@ -235,7 +246,7 @@ h3 {
   padding: 0 3%;
 }
 
-.top-content {
+.top-info div {
   width: 50%;
   padding: 2%;
   display: flex;
@@ -251,7 +262,7 @@ h3 {
   width: 90%;
 }
 
-.bottom-content {
+.bottom-info div {
   width: 33%;
   display: flex;
   flex-flow: row wrap;
@@ -291,6 +302,7 @@ footer {
   }
 
   .navlinks {
+    width: 100%;
     margin: 3% auto;
   }
 
@@ -327,8 +339,8 @@ footer {
     margin: 10% 5%;
   }
 
-  .top-content,
-  .bottom-content {
+  .top-info div,
+  .bottom-info div {
     width: 100%;
     margin: 5% 0;
   }
