@@ -175,11 +175,12 @@ nav {
   text-decoration: none;
   color: grey;
   transition: ease-in-out;
-  transition-duration: 0.1s;
+  transition-duration: 0.15s;
 }
 
 .navlinks a:hover {
   transform: scale(1.1, 1.1);
+  font-weight: bold;
 }
 
 .header-content {
@@ -223,6 +224,8 @@ h1 {
 
 .header-text button:hover {
   transform: scale(1.03, 1.03);
+  color: snow;
+  background: black;
 }
 
 hr {
